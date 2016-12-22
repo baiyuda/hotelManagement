@@ -14,7 +14,7 @@ public class ConnectionSQL {
         }
         try {
             conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/hotel"
+                    "jdbc:mysql://localhost:3307/hotel"
                     , "root", "");
             //System.out.println("连接数据库成功。");
         } catch (SQLException e) {

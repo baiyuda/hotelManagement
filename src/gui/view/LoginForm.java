@@ -58,16 +58,16 @@ public class LoginForm {
     * 创建新窗口
     * */
     public  void createNewWindow(){
-        JFrame frame = new JFrame("RoomWithOrderDisplayForm");
-        frame.setContentPane(new RoomWithOrderDisplayForm().getContentPane());
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
+        JFrame frame1 = new JFrame("RoomWithOrderDisplayForm");
+        frame1.setContentPane(new RoomWithOrderDisplayForm().getContentPane());
+        frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame1.pack();
         Dimension size = new Dimension(
                 (int) (Constant.screenSize.getWidth() * 4 / 5),
                 (int) (Constant.screenSize.getHeight() * 4/ 5));
-        frame.setSize(size);
-        frame.setLocationByPlatform(true);
-        frame.setVisible(true);
+        frame1.setSize(size);
+        frame1.setLocationRelativeTo(null);
+        frame1.setVisible(true);
     }
 
 
@@ -105,6 +105,7 @@ public class LoginForm {
         frame.setContentPane(new LoginForm().loginPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 
